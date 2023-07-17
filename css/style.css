@@ -494,17 +494,33 @@ footer p {
 } 
 
 /* ------------- LOCALES ----------- */
+
+
+/*--------- SECCION 1 --------*/
 .locales {
     background-color: rgb(145, 31, 39);
     color: white;
     text-align: center;
-    height: 80vh;
 }
-.locales iframe{
-    background-color: black;
+.locales h1{
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    border: 5px white double;
+    display: inline-block;
     padding: 10px;
-    margin: 25px;
+    margin: 30px;
 }
+
+/*--------- SECCION 2 ------------*/
+
+
+
+
+
+
+
+
 
 /*---------- CONTACTO ---------- */
 .contacto {
