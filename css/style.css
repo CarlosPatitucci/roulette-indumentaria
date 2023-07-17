@@ -563,10 +563,10 @@ footer p {
 .contacto div form{
     background-color: black;
     border: 5px white solid;
-    padding: 40px;
-    margin: 25px 25px 25px 25px;
-    width: 40%;
-    height: 90%;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 25px;
+    width: 90%;
+    height: 100%;
 }
 
 
@@ -639,6 +639,7 @@ footer p {
         margin-bottom: 10px;
     }
     .destacado div p{
+        width: 90%;
         font-size: 20px;
     }
     .destacado .boton-destacado{
@@ -757,5 +758,48 @@ footer p {
 @media screen and (max-width:1000px) {
     .grid-prendas{
         grid-template-columns: 1fr;
+    }
+}
+
+
+/*------------- LOCALES ----------*/
+
+@media screen and (max-width:767px) {
+    .locales h1{
+        font-size: 60px;
+        margin: 15px;
+    }
+}
+@media screen and (max-width:552px) {
+    .locales h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:470px) {
+    .locales h1{
+        font-size: 40px;
+    }
+    .locales div h2{
+        font-size: 18px;
+    }
+}
+
+/*--------------- CONTACTO ----------*/
+
+@media screen and (max-width:767px) {
+    .formulario{
+        text-align: left;
+    }
+    .contacto h1{
+        margin: 15px;
+    }
+}
+@media screen and (max-width:552px) {
+    .contacto h1{
+        font-size: 50px;
+    }
+    .contacto p{
+        margin: 15px;
+        font-size: 10px;
     }
 }
