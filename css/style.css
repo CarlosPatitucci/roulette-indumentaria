@@ -770,6 +770,11 @@ footer p {
         margin: 15px;
     }
 }
+@media screen and (max-width:650px) {
+    .iframe{
+        width: 100%;
+    }
+}
 @media screen and (max-width:552px) {
     .locales h1{
         font-size: 50px;
@@ -781,6 +786,11 @@ footer p {
     }
     .locales div h2{
         font-size: 18px;
+    }
+}
+@media screen and (max-width:390px) {
+    .locales h1{
+        font-size: 30px;
     }
 }
 
