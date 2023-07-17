@@ -293,11 +293,10 @@ footer p {
     margin: 20px;
 }
 .grid-prendas{
-    margin: 0 auto ;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
     gap: 15px;
 }
 .img-galeria{
@@ -317,12 +316,14 @@ footer p {
     width: 100%;
     border-top: 2px black solid;
     background-color: rgba(145, 31, 39, 0.801);
-    font-size: 20px;
-    color: white;
     position: absolute;
     bottom: 0;
     text-align: center;
     padding: 10px;
+}
+.precio-galeria h3,h4{
+    font-size: 20px;
+    color: white;
 }
 .img-galeria a{
     text-decoration: none;
@@ -337,17 +338,22 @@ footer p {
     text-align: center;
     padding: 10px;
 }
-.img-1{
+.img-galeria a h5:hover{
+    background-color: white;
+    color: rgb(145, 31, 39);
+    border: 2px black solid;
+}
+.grid-prendas .img-1{
     grid-row: span 2;
 }
-.img-2{
-    grid-column: span 2;
-}
-.img-6{
+.grid-prendas .img-3{
     grid-row: span 2;
 }
-.img-8{
-    grid-column: span 2;
+.grid-prendas .img-5{
+    grid-row: span 2;
+}
+.grid-prendas .img-7{
+    grid-row: span 2;
 }
 
 
@@ -368,7 +374,13 @@ footer p {
     font-weight: 500;
     margin: 20px;
 }
-
+.grid-botas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 500px;
+    gap: 15px;
+}
 
 /*-------------CALZADO----------------*/
 
@@ -734,30 +746,75 @@ footer p {
 
 /*--------- SECCION 1 ----------*/
 
-
+@media screen and (max-width:1120px) {
+    .grid-prendas{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-prendas .img-3{
+        grid-row: span 1;
+    }
+    .grid-prendas .img-5{
+        grid-row: span 1;
+    }
+}
+@media screen and (max-width:980px) {
+    .grid-prendas .img-1{
+        grid-row: span 1;
+    }
+    .grid-prendas .img-7{
+        grid-row: span 1;
+    }
+    .prendas h1{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:800px) {
+    .grid-prendas{
+        grid-template-columns: 1fr;
+    }
+    .grid-prendas{
+        grid-auto-rows: 500px;
+    }
+}
+@media screen and (max-width:552px) {
+    .prendas h1{
+        font-size: 34px;
+        margin: 0;
+    }
+}
+@media screen and (max-width:420px) {
+    .grid-prendas{
+        grid-auto-rows: 250px;
+    }
+}
 
 /*--------- SECCION 2 -----------*/
 
 @media screen and (max-width:1700px) {
-    .grid-prendas{
+    .grid-botas{
         grid-template-columns: repeat(3,1fr);
     }
-    .grid-prendas .foto-4{
+    .grid-botas .foto-4{
         grid-column: span 3;
     }
     
 }
 @media screen and (max-width:1440px) {
-    .grid-prendas{
+    .grid-botas{
         grid-template-columns: repeat(2,1fr);
     }
-    .grid-prendas .foto-4{
+    .grid-botas .foto-4{
         grid-column: span 1;
     } 
 }
 @media screen and (max-width:1000px) {
-    .grid-prendas{
+    .grid-botas{
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:530px) {
+    .grid-botas{
+        grid-auto-rows: 250px;
     }
 }
 
