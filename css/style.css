@@ -84,7 +84,7 @@ header {
     text-align: center;
 }
 .destacado div h2{
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     margin-bottom: 50px;
@@ -126,7 +126,7 @@ header {
     padding: 20px;
 }   
 .nuevo h2{
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     text-align: left;
@@ -154,7 +154,7 @@ header {
     padding: 10px;
 }
 .tarjetas div h3{
-    font: 20px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     margin-bottom:  30px;
@@ -176,7 +176,7 @@ header {
     padding: 20px;
 }
 .calzado-index h2{
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     text-align: left;
@@ -224,8 +224,9 @@ header {
     bottom: 100px;
     right: 50px;
 }
-.position img{
-    width: 60px;
+.position i{
+    font-size: 60px;
+    color: black;
 }
 
 
@@ -233,17 +234,16 @@ header {
 
 
 footer {
-    width: 100%;
     background-color: rgb(250, 206, 127);
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
 footer a img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
-footer h2 {
+footer div h2 {
     color: rgb(145, 31, 39) ;
     font-size: 20px;
     font-weight: 900;
@@ -252,16 +252,20 @@ footer h2 {
 footer div img {
     width: 50px;
     height: 50px;
-    padding: 5px;
 }
-footer p {
-    color: rgb(3, 3, 3) ;
-    font-size: 20px;
+footer div i{
+    font-size: 40px;
+    color: black;
 }
-.contactanos div{
+.contactanos{
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     align-items: center;
+}
+.contactanos div p{
+    color: rgb(3, 3, 3) ;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -283,11 +287,10 @@ footer p {
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
-    border: 5px white double;
     padding: 10px;
 }
 .prendas h2{
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     margin: 20px;
@@ -369,7 +372,7 @@ footer p {
     padding: 50px;
 }
 .botas h2{
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     margin: 20px;
@@ -391,24 +394,27 @@ footer p {
     text-align: center;
 }
 .calzado h1{
-    text-align: center;
     color: white;
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
-    border: 5px white double;
-    display: inline-block;
     padding: 10px;
-    margin: 0 20px 20px 20px;
 }
-
+.calzado .tarjetas-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.adidas{
+    background-color: rgb(145, 31, 39);
+}
 .calzado section div{
     background-color: black;
     width: 270px;
     height: 400px;
     border: 5px white solid;
-    display: inline-block;
-    margin: 45px;
+    margin: 40px;
     box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
     -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
     -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
@@ -437,9 +443,6 @@ footer p {
     background-color: rgb(99, 10, 16);
     font-size: 18px;
 } 
-.adidas{
-    background-color: rgb(145, 31, 39);
-}
 .nike {
     background-color: rgb(99, 10, 16);
 }
@@ -455,41 +458,12 @@ footer p {
 .ropa{
     background-color: rgb(145, 31, 39);
     color: white;
-    text-align: center;
 }
 .ropa h1{
-    text-align: center;
     color: white;
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
-    border: 5px white double;
-    display: inline-block;
-    padding: 10px;
-    margin: 0 20px 20px 20px;
-}
-
-.ropa section div{
-    background-color: black;
-    width: 270px;
-    height: 400px;
-    border: 5px white solid;
-    display: inline-block;
-    margin: 45px;
-    box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-    -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-    -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-}
-.ropa section div img{
-    width: 250px;
-    height: 250px;
-    padding: 10px;
-}
-.ropa section div h3{
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    margin-bottom: 30px;
 }
 .ropa section div h4{
     background-color: white;
@@ -504,6 +478,14 @@ footer p {
     background-color: rgb(99, 10, 16);
     font-size: 18px;
 } 
+.tarjetas p{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+.parrafo-3{
+    color: black;
+}
 
 /* ------------- LOCALES ----------- */
 
@@ -518,7 +500,6 @@ footer p {
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
-    border: 5px white double;
     display: inline-block;
     padding: 10px;
     margin: 30px;
@@ -557,7 +538,6 @@ footer p {
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
-    border: 5px white double;
     display: inline-block;
     padding: 10px;
     margin: 30px;
@@ -605,35 +585,6 @@ footer p {
 
 
 
-@media screen and (max-width:800px){
-    .banner h1{
-        font-size: 50px;
-    }
-    .banner p{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:580px){
-    .banner h1{
-        font-size: 40px;
-    }    
-    .banner p{
-        font-size: 20px;
-    }
-}
-@media screen and (max-width:480px){
-    .banner h1{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:480px){
-    .banner h1{
-        font-size: 28px;
-    }
-    .banner p{
-        font-size: 15px;
-    }
-}
 
 
 /*--------SECCION 2---------*/
@@ -665,9 +616,6 @@ footer p {
     }
 }
 @media screen and (max-width:455px){
-    .destacado div h2{
-        font-size: 30px;
-    }
     .destacado div p{
         font-size: 15px;
     }
@@ -717,7 +665,22 @@ footer p {
 
 /*--------FOOTER-----------*/
 
-@media screen and (max-width:685px){
+@media screen and (max-width:1100px){
+    footer div h2{
+        font-size: 18px;
+    }
+    footer div img{
+        width: 43px;
+        height: 43px;
+    }
+    footer div i{
+        font-size: 35px;
+    }
+    .contactanos div p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:991px){
     footer{
         justify-content: space-evenly;
     }
@@ -728,13 +691,7 @@ footer p {
         display: none;
     }
 }
-@media screen and (max-width:465px){
-    .logo-footer{
-        width: 75px;
-        height: 75px;
-    }
-}
-@media screen and (max-width:425px){
+@media screen and (max-width:575px){
     .logo-footer{
         display: none;
     }
@@ -786,6 +743,12 @@ footer p {
     .grid-prendas{
         grid-auto-rows: 250px;
     }
+    .precio-galeria{
+        padding: 0;
+    }
+    .precio-galeria h3,h4{
+        font-size: 15px;
+    }
 }
 
 /*--------- SECCION 2 -----------*/
@@ -818,6 +781,49 @@ footer p {
     }
 }
 
+/*------------- CALZADO ----------------*/
+
+@media screen and (max-width:767px) {
+    .calzado h1{
+        font-size: 60px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:552px) {
+    .calzado h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:470px) {
+    .calzado h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:380px) {
+    .calzado .tarjetas-flex div h4{
+        font-size: 15px;
+    }
+}
+
+
+/*------------- ROPA ----------------*/
+
+@media screen and (max-width:767px) {
+    .ropa h1{
+        font-size: 60px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:552px) {
+    .ropa h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:470px) {
+    .ropa h1{
+        font-size: 40px;
+    }
+}
 
 /*------------- LOCALES ----------*/
 
