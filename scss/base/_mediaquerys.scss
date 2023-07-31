@@ -1,0 +1,307 @@
+
+/*--------------MEDIA QUERYS-----------------*/
+
+/*--------HEADER--------*/
+
+@media screen and (max-width:992px){
+    header{
+        position: static;
+    }
+    header nav div a .logo{
+        width: 75px;
+        height: 75px;
+    }
+    header nav div .nav ul li .nav-enlace{
+        font-size: 20px;
+    }
+}
+
+
+/*--------SECCION 2---------*/
+
+
+@media screen and (max-width:1210px){
+    .destacado{
+        flex-direction: column;
+    }
+    .destacado div{
+        width: 90%;
+    }
+    .destacado div h2{
+        margin-bottom: 10px;
+    }
+    .destacado div p{
+        width: 90%;
+        font-size: 20px;
+    }
+    .destacado div .boton-destacado{
+        display: none;
+    }
+}
+@media screen and (max-width:560px){
+    .destacado img{
+        width: 450px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:455px){
+    .destacado div p{
+        font-size: 15px;
+    }
+    .destacado img{
+        width: 350px;
+        height: 250px;
+    }
+}
+
+/*--------SECCION 4------------*/
+
+@media screen and (max-width:1330px){
+    .calzado-index .tarjetas-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .calzado-index .tarjetas-2 .img-3{
+        grid-column: span 2;
+    }
+}
+@media screen and (max-width:920px){
+    .calzado-index .tarjetas-2{
+        grid-template-columns: 1fr;
+    }
+    .calzado-index .tarjetas-2 .img-3{
+        grid-column: span 1;
+    }
+}
+@media screen and (max-width:500px){
+    .calzado-index .tarjetas-2{
+        grid-auto-rows: 325px;
+    }
+}
+/*--------ICONO WHATSAPP------------*/
+
+@media screen and (max-width:800px){
+    .position{
+        display: none;
+    }
+}
+
+/*--------FOOTER-----------*/
+
+@media screen and (max-width:1100px){
+    footer div h2{
+        font-size: 18px;
+    }
+    footer div img{
+        width: 43px;
+        height: 43px;
+    }
+    footer div i{
+        font-size: 35px;
+    }
+    footer div .contactanos div p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:991px){
+    footer{
+        justify-content: space-evenly;
+    }
+    footer div .contactanos{
+        display: none;
+    }
+    .titulo-contacto{
+        display: none;
+    }
+}
+@media screen and (max-width:575px){
+    footer a .logo-footer{
+        display: none;
+    }
+}
+
+/*---------------LO NUEVO---------------------*/
+
+/*--------- SECCION 1 ----------*/
+
+@media screen and (max-width:1120px) {
+    .prendas .grid-prendas{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .prendas .grid-prendas .img-3{
+        grid-row: span 1;
+    }
+    .prendas .grid-prendas .img-5{
+        grid-row: span 1;
+    }
+}
+@media screen and (max-width:980px) {
+    .prendas .grid-prendas .img-1{
+        grid-row: span 1;
+    }
+    .prendas .grid-prendas .img-7{
+        grid-row: span 1;
+    }
+    .prendas h1{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:800px) {
+    .prendas .grid-prendas{
+        grid-template-columns: 1fr;
+    }
+    .prendas .grid-prendas{
+        grid-auto-rows: 500px;
+    }
+}
+@media screen and (max-width:552px) {
+    .prendas h1{
+        font-size: 34px;
+        margin: 0;
+    }
+}
+@media screen and (max-width:420px) {
+    .prendas .grid-prendas{
+        grid-auto-rows: 250px;
+    }
+    .prendas .grid-prendas .img-galeria .precio-galeria{
+        padding: 0;
+    }
+    .prendas .grid-prendas .img-galeria .precio-galeria h3,h4{
+        font-size: 15px;
+    }
+}
+/*--------- SECCION 2 -----------*/
+
+@media screen and (max-width:1700px) {
+    .botas .grid-botas{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .botas .grid-botas .foto-4{
+        grid-column: span 3;
+    }
+    
+}
+@media screen and (max-width:1440px) {
+    .botas .grid-botas{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .botas .grid-botas .foto-4{
+        grid-column: span 1;
+    } 
+}
+@media screen and (max-width:1000px) {
+    .botas .grid-botas{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:530px) {
+    .botas .grid-botas{
+        grid-auto-rows: 250px;
+    }
+    .botas h2{
+        font-size: 30px;
+    }
+}
+
+
+
+/*-------------CALZADO----------------*/
+
+@media screen and (max-width:767px) {
+    .calzado h1{
+        font-size: 60px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:552px) {
+    .calzado h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:470px) {
+    .calzado h1{
+        font-size: 40px;
+    }
+    .calzado h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:380px) {
+    .calzado .tarjetas-flex div h4{
+        font-size: 15px;
+    }
+}
+
+/*------------- INDUMENTARIA ----------------*/
+
+@media screen and (max-width:767px) {
+    .ropa h1{
+        font-size: 60px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:552px) {
+    .ropa h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:470px) {
+    .ropa h1{
+        font-size: 40px;
+    }
+}
+
+/*------------- LOCALES ----------*/
+
+@media screen and (max-width:767px) {
+    .locales h1{
+        font-size: 60px;
+        margin: 15px;
+    }
+}
+@media screen and (max-width:670px) {
+    .iframe{
+        width: 100%;
+    }    
+    .locales div h2{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:580px) {
+    .locales h1{
+        font-size: 50px;
+    }    
+}
+@media screen and (max-width:470px) {
+    .locales h1{
+        font-size: 40px;
+    }
+    .locales div h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:390px) {
+    .locales h1{
+        font-size: 30px;
+    }
+}
+
+/*--------------- CONTACTO ----------*/
+
+@media screen and (max-width:767px) {
+    .contacto .formulario{
+        text-align: left;
+    }
+    .contacto h1{
+        margin: 15px;
+    }
+}
+@media screen and (max-width:552px) {
+    .contacto h1{
+        font-size: 50px;
+    }
+    .contacto p{
+        margin: 15px;
+        font-size: 10px;
+    }
+}

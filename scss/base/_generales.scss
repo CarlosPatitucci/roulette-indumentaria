@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* --------- RESET ------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.boton{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border: white 2px solid;
+    padding: 10px;
+    &:hover{
+        background-color: white;
+        color:  rgb(145, 31, 39);
+        border: 2px black solid;
+    }
+}
+.img-galeria{
+    box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+    -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+    -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+    position: relative;
+    border: 2px black solid;
+    margin-bottom: 40px;
+}
+.precio-galeria{
+    width: 100%;
+    border-top: 2px black solid;
+    background-color: rgba(145, 31, 39, 0.801);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
