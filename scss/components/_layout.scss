@@ -4,91 +4,82 @@
 
 .destacado{
     width: 100%;
-    background-color: rgb(145, 31, 39);
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: $color-primario;
+    color: nth($color, 4);
+    @include flex (flex, row, space-evenly, center);
     padding: 10px;
     div{
         width: 60%;
         text-align: center;
         h2{
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 500;
+            @extend %sub-titulo;
             margin-bottom: 50px;
         }
         p{
-            font-size: 30px;
+            font-size: nth($font-size, 3);
             font-weight: 300;
             margin: 20px;
         }
         .boton-destacado{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, row, center, center);
             position: relative;
             left: 200px;
             h3{
-                background-color: white;
-                color: black;
+                background-color: nth($color, 4);
+                color: nth($color, 5);
                 border: black 2px solid;
                 padding: 10px;
                 margin: 10px;
             }
             .boton{
+                background-color: nth($color, 5);
+                &:hover{
+                    background-color: nth($color, 4);
+                    color:  $color-primario;
+                    border: 2px black solid;
+                }
             }
         }
     }
     img{
-        width: 550px;
-        height: 450px;
+        @include tamano (550px, 450px);
         border: 2px white solid;
         padding: 10px;
-        box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-        -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-        -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+        @extend %sombra;
     }
 }
 
 /* ------- SECCION 3 ------ */
 
 .nuevo{
-    background-color: rgb(99, 10, 16);
-    color: white;
+    background-color: $color-secundario;
+    color: nth($color, 4);
     padding: 20px;
     h2{
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
+        @extend %sub-titulo;
         text-align: left;
     }
     .tarjetas{
         div{
-            background-color: black;
-            width: 270px;
-            height: 400px;
+            background-color: nth($color, 5);
+            @include tamano (270px, 400px);
             border: 5px white solid;
             margin: 45px;
-            box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-            -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-            -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+            @extend %sombra;
             img{
-                width: 250px;
-                height: 250px;
+                @include tamano (250px, 250px);
                 padding: 10px;
             }
             h3{
-                font-size: 20px;
+                font-size: nth($font-size, 2);
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 500;
                 margin-bottom:  30px;
             }
             a{
                 background-color: $color-secundario;
                 &:hover{
-                    background-color: rgb(252, 240, 200);
+                    background-color: $color-terciario;
                     color: $color-secundario;
                     border: 2px $color-secundario solid;
                 }
@@ -101,14 +92,12 @@
 
 .calzado-index{
     background-color: $color-terciario;
-    color: white;
+    color: nth($color, 4);
     padding: 20px;
     h2{
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
+        @extend %sub-titulo;
         text-align: left;
-        color: black;
+        color: nth($color, 5);
         margin-bottom: 50px;
     }
     .tarjetas-2{
@@ -119,14 +108,11 @@
         grid-auto-rows: 450px;
         gap: 10px;
         .target{
-            box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-            -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-            -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+            @extend %sombra;
             position: relative;
             border: 2px black solid;
             img{
-                width: 100%;
-                height: 100%;
+                @include tamano (100%, 100%);
                 object-fit: cover;
             }
             a{
@@ -134,7 +120,7 @@
                     text-decoration: none;
                     width: 100%;
                     background-color: rgba(0, 0, 0, 0.822);
-                    color: white;
+                    color: nth($color, 4);
                     position: absolute;
                     bottom: 0;
                     text-align: center;
@@ -155,8 +141,8 @@
     bottom: 100px;
     right: 50px;
     i{
-        font-size: 60px;
-        color: black;
+        font-size: nth($font-size, 6);
+        color: nth($color, 5);
     }
 }
 
@@ -166,23 +152,14 @@
 
 .prendas{
     background-color: $color-primario;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: nth($color, 4);
+    @include flex (flex, column, center, center);
     padding: 50px;
     h1{
-        color: white;
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 700;
-        padding: 10px;
+        @extend %encabezado;
     }
     h2{
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
+        @extend %sub-titulo;
         margin: 20px;
     }
     .grid-prendas{
@@ -196,29 +173,28 @@
         }
         .img-galeria{
             img{
-                width: 100%;
-                height: 100%;
+                @include tamano (100%, 100%);
                 object-fit: cover;
             }
             .precio-galeria{
                 h3,h4{
-                    font-size: 20px;
-                    color: white;
+                    font-size: nth($font-size, 2);
+                    color: nth($color, 4);
                 }
             }
             a{
                 text-decoration: none;
-                color: white;
+                color: nth($color, 4);
                 h5{
                     border: 2px white solid;
-                    font-size: 20px;
+                    font-size: nth($font-size, 2);
                     width: 100%;
                     background-color: rgba(0, 0, 0, 0.822);
-                    color: white;
+                    color: nth($color, 4);
                     text-align: center;
                     padding: 10px;
                     &:hover{
-                        background-color: white;
+                        background-color: nth($color, 4);
                         color: $color-primario;
                         border: 2px black solid;
                     }
@@ -232,16 +208,11 @@
 
 .botas{
     background-color: $color-secundario;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: nth($color, 4);
+    @include flex (flex, column, center, center);
     padding: 50px;
     h2{
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
+        @extend %sub-titulo;
         margin: 20px;
     }
     .grid-botas{
@@ -252,29 +223,28 @@
         gap: 15px;
         .img-galeria{
             img{
-                width: 100%;
-                height: 100%;
+                @include tamano (100%, 100%);
                 object-fit: cover;
             }
             .precio-galeria{
                 h3,h4{
-                    font-size: 20px;
-                    color: white;
+                    font-size: nth($font-size, 2);
+                    color: nth($color, 4);
                 }
             }
             a{
                 text-decoration: none;
-                color: white;
+                color: nth($color, 4);
                 h5{
                     border: 2px white solid;
-                    font-size: 20px;
+                    font-size: nth($font-size, 2);
                     width: 100%;
                     background-color: rgba(0, 0, 0, 0.822);
-                    color: white;
+                    color: nth($color, 4);
                     text-align: center;
                     padding: 10px;
                     &:hover{
-                        background-color: white;
+                        background-color: nth($color, 4);
                         color: $color-primario;
                         border: 2px black solid;
                     }
@@ -288,63 +258,54 @@
 
 .calzado{
     background-color: $color-primario;
-    color: white;
+    color: nth($color, 4);
     text-align: center;
     h1{
-        color: white;
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 700;
-        padding: 10px;
+        @extend %encabezado;
     }
     h2{
-        color: white;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
+        color: nth($color, 4);
+        @extend %sub-titulo;
         padding: 10px;
     }
     .adidas{
         background-color: $color-primario;
     }
     .tarjetas-flex{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex (flex, row, space-around, center);
         flex-wrap: wrap;
         div{
-            background-color: black;
-            width: 270px;
-            height: 400px;
+            background-color: nth($color, 5);
+            @include tamano (270px, 400px);
             border: 5px white solid;
             margin: 40px;
-            box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-            -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-            -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+            @extend %sombra;
             img{
-                width: 250px;
-                height: 250px;
+                @include tamano (250px, 250px);
                 padding: 10px;
             }
             h3{
-                font-size: 18px;
+                font-size: nth($font-size, 1);
                 font-style: normal;
                 font-weight: 500;
                 margin-bottom: 30px;
             }
             h4{
-                background-color: white;
-                color: black;
+                background-color: nth($color, 4);
+                color: nth($color, 5);
                 padding: 10px;
                 display: inline-block;
-                font-size: 18px;
+                font-size: nth($font-size, 1);
                 font-style: normal;
                 font-weight: 500;
             }
-            a{
+            .boton{
                 background-color: $color-secundario;
-                font-size: 18px;
-                .boton{}
+                &:hover{
+                background-color: $color-terciario;
+                color:  $color-secundario;
+                border: 2px rgb(145, 31, 39) solid;
+                }
             }
         }
     }
@@ -354,7 +315,8 @@
     .otras-marcas{
         background-color: $color-terciario;
         h2{
-            color: black;
+            @extend %sub-titulo;
+            color: nth($color, 5);
         }
     }
 }
@@ -364,63 +326,57 @@
 
 .ropa{
     background-color: $color-primario;
-    color: white;
+    color: nth($color, 4);
     h1{
-        color: white;
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 700;
+        @extend %encabezado;
     }
     .adidas{
         h2{
-            color: white;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
+            color: nth($color, 4);
+            @extend %sub-titulo;
             padding: 10px;
         }
         .tarjetas{
             div{
-                background-color: black;
-                width: 270px;
-                height: 400px;
+                background-color: nth($color, 5);
+                @include tamano (270px, 400px);
                 border: 5px white solid;
                 margin: 45px;
-                box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-                -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-                -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+                @extend %sombra;
                 img{
-                    width: 250px;
-                    height: 250px;
+                    @include tamano (250px, 250px);
                     padding: 10px;
                 }
                 h3{
-                    font-size: 18px;
+                    font-size: nth($font-size, 1);
                     font-style: normal;
                     font-weight: 500;
                     margin-bottom: 30px;
                 }
                 h4{
-                    background-color: white;
-                    color: black;
+                    background-color: nth($color, 4);
+                    color: nth($color, 5);
                     padding: 10px;
                     display: inline-block;
-                    font-size: 18px;
+                    font-size: nth($font-size, 1);
                     font-style: normal;
                     font-weight: 500;
                 }
-                a{
+                .boton{
                     background-color: $color-secundario;
-                    font-size: 18px;
-                    .boton{}
+                    &:hover{
+                    background-color: $color-terciario;
+                    color:  $color-secundario;
+                    border: 2px rgb(145, 31, 39) solid;
+                    }
                 }
             }
             p{
-                font-size: 20px;
+                font-size: nth($font-size, 2);
                 font-weight: 700;
                 padding: 10px;
                 .parrafo-3{
-                    color: black;
+                    color: nth($color, 5);
                 }
             }
         }
@@ -428,54 +384,51 @@
     .nike{
         background-color: $color-secundario;
         h2{
-            color: white;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
+            color: nth($color, 4);
+            @extend %sub-titulo;
             padding: 10px;
         }
         .tarjetas{
             div{
-                background-color: black;
-                width: 270px;
-                height: 400px;
+                background-color: nth($color, 5);
+                @include tamano (270px, 400px);
                 border: 5px white solid;
                 margin: 45px;
-                box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-                -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-                -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+                @extend %sombra;
                 img{
-                    width: 250px;
-                    height: 250px;
+                    @include tamano (250px, 250px);
                     padding: 10px;
                 }
                 h3{
-                    font-size: 18px;
+                    font-size: nth($font-size, 1);
                     font-style: normal;
                     font-weight: 500;
                     margin-bottom: 30px;
                 }
                 h4{
-                    background-color: white;
-                    color: black;
+                    background-color: nth($color, 4);
+                    color: nth($color, 5);
                     padding: 10px;
                     display: inline-block;
-                    font-size: 18px;
+                    font-size: nth($font-size, 1);
                     font-style: normal;
                     font-weight: 500;
                 }
-                a{
+                .boton{
                     background-color: $color-secundario;
-                    font-size: 18px;
-                    .boton{}
+                    &:hover{
+                    background-color: $color-terciario;
+                    color:  $color-secundario;
+                    border: 2px rgb(145, 31, 39) solid;
+                    }
                 }
             }
             p{
-                font-size: 20px;
+                font-size: nth($font-size, 2);
                 font-weight: 700;
                 padding: 10px;
                 .parrafo-3{
-                    color: black;
+                    color: nth($color, 5);
                 }
             }
         }
@@ -483,52 +436,49 @@
     }
     .otras-marcas{
         background-color: $color-terciario;
-        color: black;
+        color: nth($color, 5);
         h2{
-            color: black;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
+            color: nth($color, 5);
+            @extend %sub-titulo;
             padding: 10px;
         }
         .tarjetas{
             div{
-                background-color: black;
-                width: 270px;
-                height: 400px;
+                background-color: nth($color, 5);
+                @include tamano (270px, 400px);
                 border: 5px white solid;
                 margin: 45px;
-                box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-                -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
-                -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+                @extend %sombra;
                 img{
-                    width: 250px;
-                    height: 250px;
+                    @include tamano (250px, 250px);
                     padding: 10px;
                 }
                 h3{
-                    font-size: 18px;
+                    font-size: nth($font-size, 1);
                     font-style: normal;
                     font-weight: 500;
                     margin-bottom: 30px;
                 }
                 h4{
-                    background-color: white;
-                    color: black;
+                    background-color: nth($color, 4);
+                    color: nth($color, 5);
                     padding: 10px;
                     display: inline-block;
-                    font-size: 18px;
+                    font-size: nth($font-size, 1);
                     font-style: normal;
                     font-weight: 500;
                 }
-                a{
+                .boton{
                     background-color: $color-secundario;
-                    font-size: 18px;
-                    .boton{}
+                    &:hover{
+                    background-color: $color-terciario;
+                    color:  $color-secundario;
+                    border: 2px rgb(145, 31, 39) solid;
+                    }
                 }
             }
             p{
-                font-size: 20px;
+                font-size: nth($font-size, 2);
                 font-weight: 700;
                 padding: 10px;
                 }
@@ -541,22 +491,17 @@
 
 .locales{
     background-color: $color-primario;
-    color: white;
+    color: nth($color, 4);
     text-align: center;
     h1{
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 700;
+        @extend %encabezado;
         display: inline-block;
-        padding: 10px;
         margin: 30px;
     }
     div{
         h2{
-            color: white;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
+            color: nth($color, 4);
+            @extend %sub-titulo;
             padding: 10px;
         }
     } 
@@ -566,18 +511,15 @@
 
 .proximos{
     background-color: $color-secundario;
-    width: 100%;
-    height: 40vh;
-    color: white;
+    @include tamano (100%, 40vh);
+    color: nth($color, 4);
     padding: 20px;
     h2{
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 500;
+        @extend %sub-titulo;
         margin-bottom: 30px;
     }
     p{
-        font-size: 20px;
+        font-size: nth($font-size, 2);
         margin: 30px;
     }
 }
@@ -588,31 +530,25 @@
 
 .contacto{
     background-color: $color-primario;
-    color: white;
+    color: nth($color, 4);
     text-align: center;
     h1{
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 700;
+        @extend %encabezado;
         display: inline-block;
-        padding: 10px;
         margin: 30px;
     }
     p{
-        font-size: 20px;
+        font-size: nth($font-size, 2);
         margin: 30px;
     }
     .formulario{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex, row, center, center);
         form{
-            background-color: black;
+            background-color: nth($color, 5);
             border: 5px white solid;
             padding: 20px 10px 20px 10px;
             margin-bottom: 25px;
-            width: 90%;
-            height: 100%;
+            @include tamano (90%, 100%);
         }
     }
 }

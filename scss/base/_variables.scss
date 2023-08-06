@@ -1,4 +1,46 @@
+//* VARIABLES
+
 $color-primario: rgb(145, 31, 39);
 $color-secundario: rgb(99, 10, 16);
 $color-terciario: rgb(252, 240, 200);
 $color-extra: rgb(250, 206, 127);
+
+
+//* LISTAS
+
+$color: red, blue, yellow, white, black, gray, green, orange, violet, pink;
+$font-size: 18px, 20px, 30px, 40px, 50px, 60px, 70px;
+
+
+//* EXTEND
+
+%sombra{
+    box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+    -webkit-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+    -moz-box-shadow: 10px 10px 72px 0px rgba(3,3,3,1);
+}
+%encabezado{
+    color: white;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px;
+}
+%sub-titulo{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+//* MIXINS
+
+@mixin flex ($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin tamano ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

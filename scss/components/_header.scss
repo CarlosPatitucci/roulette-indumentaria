@@ -9,28 +9,25 @@ header{
         div{
             a{
                 .logo{
-                    width: 100px;
-                    height: 100px;
+                    @include tamano (100px, 100px);
                 }
             }
             .boton-nav{
                 background-color: $color-primario;
                 border: 2px white solid;
-                color: black;
+                color: nth($color, 5);
                 &:hover{
-                    background-color: white;
+                    background-color: nth($color, 4);
                 }
             }
             .nav{
-                display: flex;
-                justify-content: end;
-                align-items: center;
+                @include flex (flex, row, end, center);
                 ul{
                     li{
                         .nav-enlace{
                             text-decoration: none;
                             color: rgba(255, 255, 255, 0.89);
-                            font-size: 30px;
+                            font-size: nth($font-size, 3);
                             &:hover{
                                 color: $color-primario;
                             }

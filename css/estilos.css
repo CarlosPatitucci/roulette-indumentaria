@@ -11,14 +11,9 @@ body {
 .boton {
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  background-color: black;
+  font-size: 18px;
   border: white 2px solid;
   padding: 10px; }
-  .boton:hover {
-    background-color: white;
-    color: #911f27;
-    border: 2px black solid; }
 
 .img-galeria {
   box-shadow: 10px 10px 72px 0px #030303;
@@ -44,6 +39,23 @@ body {
   text-align: center;
   flex-wrap: wrap; }
 
+.destacado img, .nuevo .tarjetas div, .calzado-index .tarjetas-2 .target, .calzado .tarjetas-flex div, .ropa .adidas .tarjetas div, .ropa .nike .tarjetas div, .ropa .otras-marcas .tarjetas div {
+  box-shadow: 10px 10px 72px 0px #030303;
+  -webkit-box-shadow: 10px 10px 72px 0px #030303;
+  -moz-box-shadow: 10px 10px 72px 0px #030303; }
+
+.prendas h1, .calzado h1, .ropa h1, .locales h1, .contacto h1 {
+  color: white;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 10px; }
+
+.destacado div h2, .nuevo h2, .calzado-index h2, .prendas h2, .botas h2, .calzado h2, .calzado .otras-marcas h2, .ropa .adidas h2, .ropa .nike h2, .ropa .otras-marcas h2, .locales div h2, .proximos h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500; }
+
 /* -------------- HEADER ----------------*/
 header {
   position: sticky;
@@ -60,6 +72,7 @@ header {
       background-color: white; }
   header nav div .nav {
     display: flex;
+    flex-direction: row;
     justify-content: end;
     align-items: center; }
     header nav div .nav ul li .nav-enlace {
@@ -76,6 +89,7 @@ header {
   background-color: #911f27;
   color: white;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px; }
@@ -83,9 +97,6 @@ header {
     width: 60%;
     text-align: center; }
     .destacado div h2 {
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 500;
       margin-bottom: 50px; }
     .destacado div p {
       font-size: 30px;
@@ -93,6 +104,7 @@ header {
       margin: 20px; }
     .destacado div .boton-destacado {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       position: relative;
@@ -103,14 +115,17 @@ header {
         border: black 2px solid;
         padding: 10px;
         margin: 10px; }
+      .destacado div .boton-destacado .boton {
+        background-color: black; }
+        .destacado div .boton-destacado .boton:hover {
+          background-color: white;
+          color: #911f27;
+          border: 2px black solid; }
   .destacado img {
     width: 550px;
     height: 450px;
     border: 2px white solid;
-    padding: 10px;
-    box-shadow: 10px 10px 72px 0px #030303;
-    -webkit-box-shadow: 10px 10px 72px 0px #030303;
-    -moz-box-shadow: 10px 10px 72px 0px #030303; }
+    padding: 10px; }
 
 /* ------- SECCION 3 ------ */
 .nuevo {
@@ -118,19 +133,13 @@ header {
   color: white;
   padding: 20px; }
   .nuevo h2 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
     text-align: left; }
   .nuevo .tarjetas div {
     background-color: black;
     width: 270px;
     height: 400px;
     border: 5px white solid;
-    margin: 45px;
-    box-shadow: 10px 10px 72px 0px #030303;
-    -webkit-box-shadow: 10px 10px 72px 0px #030303;
-    -moz-box-shadow: 10px 10px 72px 0px #030303; }
+    margin: 45px; }
     .nuevo .tarjetas div img {
       width: 250px;
       height: 250px;
@@ -138,7 +147,7 @@ header {
     .nuevo .tarjetas div h3 {
       font-size: 20px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       margin-bottom: 30px; }
     .nuevo .tarjetas div a {
       background-color: #630a10; }
@@ -153,9 +162,6 @@ header {
   color: white;
   padding: 20px; }
   .calzado-index h2 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
     text-align: left;
     color: black;
     margin-bottom: 50px; }
@@ -167,9 +173,6 @@ header {
     grid-auto-rows: 450px;
     gap: 10px; }
     .calzado-index .tarjetas-2 .target {
-      box-shadow: 10px 10px 72px 0px #030303;
-      -webkit-box-shadow: 10px 10px 72px 0px #030303;
-      -moz-box-shadow: 10px 10px 72px 0px #030303;
       position: relative;
       border: 2px black solid; }
       .calzado-index .tarjetas-2 .target img {
@@ -203,20 +206,11 @@ header {
   background-color: #911f27;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 50px; }
-  .prendas h1 {
-    color: white;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    padding: 10px; }
   .prendas h2 {
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
     margin: 20px; }
   .prendas .grid-prendas {
     width: 100%;
@@ -254,14 +248,11 @@ header {
   background-color: #630a10;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 50px; }
   .botas h2 {
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
     margin: 20px; }
   .botas .grid-botas {
     width: 100%;
@@ -297,22 +288,14 @@ header {
   background-color: #911f27;
   color: white;
   text-align: center; }
-  .calzado h1 {
-    color: white;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    padding: 10px; }
   .calzado h2 {
     color: white;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
     padding: 10px; }
   .calzado .adidas {
     background-color: #911f27; }
   .calzado .tarjetas-flex {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
@@ -321,10 +304,7 @@ header {
       width: 270px;
       height: 400px;
       border: 5px white solid;
-      margin: 40px;
-      box-shadow: 10px 10px 72px 0px #030303;
-      -webkit-box-shadow: 10px 10px 72px 0px #030303;
-      -moz-box-shadow: 10px 10px 72px 0px #030303; }
+      margin: 40px; }
       .calzado .tarjetas-flex div img {
         width: 250px;
         height: 250px;
@@ -342,9 +322,12 @@ header {
         font-size: 18px;
         font-style: normal;
         font-weight: 500; }
-      .calzado .tarjetas-flex div a {
-        background-color: #630a10;
-        font-size: 18px; }
+      .calzado .tarjetas-flex div .boton {
+        background-color: #630a10; }
+        .calzado .tarjetas-flex div .boton:hover {
+          background-color: #fcf0c8;
+          color: #630a10;
+          border: 2px #911f27 solid; }
   .calzado .nike {
     background-color: #630a10; }
   .calzado .otras-marcas {
@@ -356,26 +339,15 @@ header {
 .ropa {
   background-color: #911f27;
   color: white; }
-  .ropa h1 {
-    color: white;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700; }
   .ropa .adidas h2 {
     color: white;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
     padding: 10px; }
   .ropa .adidas .tarjetas div {
     background-color: black;
     width: 270px;
     height: 400px;
     border: 5px white solid;
-    margin: 45px;
-    box-shadow: 10px 10px 72px 0px #030303;
-    -webkit-box-shadow: 10px 10px 72px 0px #030303;
-    -moz-box-shadow: 10px 10px 72px 0px #030303; }
+    margin: 45px; }
     .ropa .adidas .tarjetas div img {
       width: 250px;
       height: 250px;
@@ -393,9 +365,12 @@ header {
       font-size: 18px;
       font-style: normal;
       font-weight: 500; }
-    .ropa .adidas .tarjetas div a {
-      background-color: #630a10;
-      font-size: 18px; }
+    .ropa .adidas .tarjetas div .boton {
+      background-color: #630a10; }
+      .ropa .adidas .tarjetas div .boton:hover {
+        background-color: #fcf0c8;
+        color: #630a10;
+        border: 2px #911f27 solid; }
   .ropa .adidas .tarjetas p {
     font-size: 20px;
     font-weight: 700;
@@ -406,19 +381,13 @@ header {
     background-color: #630a10; }
     .ropa .nike h2 {
       color: white;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 500;
       padding: 10px; }
     .ropa .nike .tarjetas div {
       background-color: black;
       width: 270px;
       height: 400px;
       border: 5px white solid;
-      margin: 45px;
-      box-shadow: 10px 10px 72px 0px #030303;
-      -webkit-box-shadow: 10px 10px 72px 0px #030303;
-      -moz-box-shadow: 10px 10px 72px 0px #030303; }
+      margin: 45px; }
       .ropa .nike .tarjetas div img {
         width: 250px;
         height: 250px;
@@ -436,9 +405,12 @@ header {
         font-size: 18px;
         font-style: normal;
         font-weight: 500; }
-      .ropa .nike .tarjetas div a {
-        background-color: #630a10;
-        font-size: 18px; }
+      .ropa .nike .tarjetas div .boton {
+        background-color: #630a10; }
+        .ropa .nike .tarjetas div .boton:hover {
+          background-color: #fcf0c8;
+          color: #630a10;
+          border: 2px #911f27 solid; }
     .ropa .nike .tarjetas p {
       font-size: 20px;
       font-weight: 700;
@@ -450,19 +422,13 @@ header {
     color: black; }
     .ropa .otras-marcas h2 {
       color: black;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 500;
       padding: 10px; }
     .ropa .otras-marcas .tarjetas div {
       background-color: black;
       width: 270px;
       height: 400px;
       border: 5px white solid;
-      margin: 45px;
-      box-shadow: 10px 10px 72px 0px #030303;
-      -webkit-box-shadow: 10px 10px 72px 0px #030303;
-      -moz-box-shadow: 10px 10px 72px 0px #030303; }
+      margin: 45px; }
       .ropa .otras-marcas .tarjetas div img {
         width: 250px;
         height: 250px;
@@ -480,9 +446,12 @@ header {
         font-size: 18px;
         font-style: normal;
         font-weight: 500; }
-      .ropa .otras-marcas .tarjetas div a {
-        background-color: #630a10;
-        font-size: 18px; }
+      .ropa .otras-marcas .tarjetas div .boton {
+        background-color: #630a10; }
+        .ropa .otras-marcas .tarjetas div .boton:hover {
+          background-color: #fcf0c8;
+          color: #630a10;
+          border: 2px #911f27 solid; }
     .ropa .otras-marcas .tarjetas p {
       font-size: 20px;
       font-weight: 700;
@@ -495,17 +464,10 @@ header {
   color: white;
   text-align: center; }
   .locales h1 {
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
     display: inline-block;
-    padding: 10px;
     margin: 30px; }
   .locales div h2 {
     color: white;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
     padding: 10px; }
 
 /*--------- SECCION 2 ------------*/
@@ -516,9 +478,6 @@ header {
   color: white;
   padding: 20px; }
   .proximos h2 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
     margin-bottom: 30px; }
   .proximos p {
     font-size: 20px;
@@ -530,19 +489,16 @@ header {
   color: white;
   text-align: center; }
   .contacto h1 {
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
     display: inline-block;
-    padding: 10px;
     margin: 30px; }
   .contacto p {
     font-size: 20px;
     margin: 30px; }
   .contacto .formulario {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
     .contacto .formulario form {
       background-color: black;
       border: 5px white solid;
@@ -555,6 +511,7 @@ header {
 footer {
   background-color: #face7f;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: start; }
   footer a .logo-footer {
@@ -573,6 +530,7 @@ footer {
     color: black; }
   footer div .contactanos {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center; }
     footer div .contactanos div i {

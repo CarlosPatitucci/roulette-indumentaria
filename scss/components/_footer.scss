@@ -1,53 +1,43 @@
 /*---------------FOOTER-------------*/
 
 footer{
-    background-color: rgb(250, 206, 127);
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+    background-color: $color-extra;
+    @include flex (flex, row, space-between, start);
     a{
         .logo-footer{
-            width: 75px;
-            height: 75px;
+            @include tamano (75px, 75px);
         }
     }
     div{
         h2{
             color: $color-primario;
-            font-size: 20px;
+            font-size: nth($font-size, 2);
             font-weight: 900;
             margin-bottom: 10px ;
         }
         img{
-            width: 50px;
-            height: 50px;
+            @include tamano (50px, 50px);
         }
     }
     div{
-        h2{
-        }
         a{
             i{
-                font-size: 40px;
-                color: black;
+                font-size: nth($font-size, 4);
+                color: nth($color, 5);
             }
         }
     }
     div{
-        h2{
-        }
         .contactanos{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flex (flex, row, space-around, center);
             div{
                 i{
-                    font-size: 40px;
-                    color: black;
+                    font-size: nth($font-size, 4);
+                    color: nth($color, 5);
                 }
                 p{
-                    color: rgb(0, 0, 0) ;
-                    font-size: 18px;
+                    color: nth($color, 5);
+                    font-size: nth($font-size, 1);
                     font-weight: 500;
                 }
             }
