@@ -481,7 +481,7 @@ header {
     margin-bottom: 30px; }
   .proximos p {
     font-size: 20px;
-    margin: 30px; }
+    margin: 20px; }
 
 /*---------- CONTACTO ---------- */
 .contacto {
@@ -572,11 +572,18 @@ footer {
     height: 350px; } }
 
 @media screen and (max-width: 455px) {
+  .destacado div h2 {
+    font-size: 30px; }
   .destacado div p {
     font-size: 15px; }
   .destacado img {
     width: 350px;
     height: 250px; } }
+
+/*--------SECCION 3------------*/
+@media screen and (max-width: 380px) {
+  .nuevo h2 {
+    font-size: 30px; } }
 
 /*--------SECCION 4------------*/
 @media screen and (max-width: 1330px) {
@@ -594,6 +601,10 @@ footer {
 @media screen and (max-width: 500px) {
   .calzado-index .tarjetas-2 {
     grid-auto-rows: 325px; } }
+
+@media screen and (max-width: 380px) {
+  .calzado-index h2 {
+    font-size: 30px; } }
 
 /*--------ICONO WHATSAPP------------*/
 @media screen and (max-width: 800px) {
@@ -684,6 +695,10 @@ footer {
   .botas h2 {
     font-size: 30px; } }
 
+@media screen and (max-width: 420px) {
+  .botas .grid-botas .img-galeria .precio-galeria h3, h4 {
+    font-size: 15px; } }
+
 /*-------------CALZADO----------------*/
 @media screen and (max-width: 767px) {
   .calzado h1 {
@@ -722,7 +737,9 @@ footer {
 @media screen and (max-width: 767px) {
   .locales h1 {
     font-size: 60px;
-    margin: 15px; } }
+    margin: 15px; }
+  .locales div h2 {
+    font-size: 30px; } }
 
 @media screen and (max-width: 670px) {
   .iframe {
@@ -738,11 +755,17 @@ footer {
   .locales h1 {
     font-size: 40px; }
   .locales div h2 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .proximos p {
+    font-size: 16px; } }
 
 @media screen and (max-width: 390px) {
   .locales h1 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .proximos h2 {
+    font-size: 30px; }
+  .proximos p {
+    font-size: 13px; } }
 
 /*--------------- CONTACTO ----------*/
 @media screen and (max-width: 767px) {
