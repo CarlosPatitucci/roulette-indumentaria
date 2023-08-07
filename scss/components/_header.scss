@@ -10,12 +10,18 @@ header{
             a{
                 .logo{
                     @include tamano (100px, 100px);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
+
             }
             .boton-nav{
                 background-color: $color-primario;
                 border: 2px white solid;
                 color: nth($color, 5);
+                transition: 1s;
                 &:hover{
                     background-color: nth($color, 4);
                 }
@@ -28,6 +34,7 @@ header{
                             text-decoration: none;
                             color: rgba(255, 255, 255, 0.89);
                             font-size: nth($font-size, 3);
+                            transition: 0.5s;
                             &:hover{
                                 color: $color-primario;
                             }

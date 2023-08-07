@@ -6,6 +6,10 @@ footer{
     a{
         .logo-footer{
             @include tamano (75px, 75px);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
     div{
@@ -24,6 +28,10 @@ footer{
             i{
                 font-size: nth($font-size, 4);
                 color: nth($color, 5);
+                transition: 1s;
+                &:hover{
+                    color: $color-primario;
+                }
             }
         }
     }

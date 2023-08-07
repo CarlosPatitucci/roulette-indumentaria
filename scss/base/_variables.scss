@@ -25,6 +25,24 @@ $font-size: 18px, 20px, 30px, 40px, 50px, 60px, 70px;
     font-style: normal;
     font-weight: 700;
     padding: 10px;
+    animation: transformacion 5s forwards;
+    @keyframes transformacion {
+        0%{
+            color: nth($color, 4);
+        }
+        25%{
+            color: nth($color, 5);
+        }
+        50%{
+            color: nth($color, 4);
+        }
+        75%{
+            color: nth($color, 5);
+        }
+        100%{
+            color: nth($color, 4);
+        }
+    }
 }
 %sub-titulo{
     font-size: 40px;
