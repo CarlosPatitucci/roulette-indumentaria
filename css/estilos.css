@@ -489,7 +489,8 @@ header {
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        color: white; }
       .ropa .otras-marcas .tarjetas div h4 {
         background-color: white;
         color: black;
