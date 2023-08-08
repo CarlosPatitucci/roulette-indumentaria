@@ -11,6 +11,9 @@
     div{
         width: 60%;
         text-align: center;
+        h1{
+            @extend %encabezado;
+        }
         h2{
             @extend %sub-titulo;
             margin-bottom: 50px;

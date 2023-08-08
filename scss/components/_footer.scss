@@ -1,52 +1,56 @@
 /*---------------FOOTER-------------*/
 
-footer{
+footer {
     background-color: $color-extra;
-    @include flex (flex, row, space-between, start);
-    a{
-        .logo-footer{
-            @include tamano (75px, 75px);
-            transition: 1s;
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-    }
-    div{
-        h2{
-            color: $color-primario;
-            font-size: nth($font-size, 2);
-            font-weight: 900;
-            margin-bottom: 10px ;
-        }
-        img{
-            @include tamano (50px, 50px);
-        }
-    }
-    div{
-        a{
-            i{
-                font-size: nth($font-size, 4);
-                color: nth($color, 5);
-                transition: 1s;
-                &:hover{
-                    color: $color-primario;
+    section {
+            @include flex (flex, row, space-between, start);
+        div {
+            a {
+                .logo-footer {
+                    @include tamano (75px, 75px);
+                    transition: 1s;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
                 }
             }
         }
-    }
-    div{
-        .contactanos{
-            @include flex (flex, row, space-around, center);
-            div{
-                i{
+        div {
+            h2 {
+                color: $color-primario;
+                font-size: nth($font-size, 2);
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+            img {
+                @include tamano (50px, 50px);
+            }
+        }
+        div {
+            a {
+                i {
                     font-size: nth($font-size, 4);
                     color: nth($color, 5);
+                    transition: 1s;
+                    &:hover {
+                        color: $color-primario;
+                    }
                 }
-                p{
-                    color: nth($color, 5);
-                    font-size: nth($font-size, 1);
-                    font-weight: 500;
+            }
+        }
+        div {
+            .contactanos {
+                @include flex (flex, row, space-around, center);
+                div {
+                    i {
+                        font-size: nth($font-size, 4);
+                        color: nth($color, 5);
+                    }
+                    p {
+                        color: nth($color, 5);
+                        font-size: nth($font-size, 1);
+                        font-weight: 500;
+                    }
                 }
             }
         }
