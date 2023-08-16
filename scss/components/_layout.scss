@@ -70,7 +70,7 @@
             border: 5px white solid;
             margin: 45px;
             @extend %sombra;
-            transition: 1.5s;
+            transition: 1s;
             &:hover{
                 transform: scale(1.1);
             }
@@ -303,11 +303,7 @@
             @include tamano (270px, 400px);
             border: 5px white solid;
             margin: 40px;
-            transition: 1s;
-            &:hover{            
-                @extend %sombra;
-                transform: scale(1.1);
-            }
+            @extend %sombra;
             img{
                 @include tamano (250px, 250px);
                 padding: 10px;
@@ -371,11 +367,7 @@
                 @include tamano (270px, 400px);
                 border: 5px white solid;
                 margin: 45px;
-                transition: 1s;
-                &:hover{            
-                    @extend %sombra;
-                    transform: scale(1.1);
-                }
+                @extend %sombra;
                 img{
                     @include tamano (250px, 250px);
                     padding: 10px;
@@ -429,10 +421,6 @@
                 border: 5px white solid;
                 margin: 45px;
                 @extend %sombra;
-                transition: 1s;
-                &:hover{            
-                    transform: scale(1.1);
-                }
                 img{
                     @include tamano (250px, 250px);
                     padding: 10px;
@@ -488,10 +476,6 @@
                 border: 5px white solid;
                 margin: 45px;
                 @extend %sombra;
-                transition: 1s;
-                &:hover{            
-                    transform: scale(1.1);
-                }
                 img{
                     @include tamano (250px, 250px);
                     padding: 10px;
